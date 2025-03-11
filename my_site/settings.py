@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':'postgres',
-        'USER':'aloysious_blog_user',
-        'PASSWORD':'lu0POOv4wnEbVwGcFbGh70q9LrHW0IgI',
-        'HOST':'localhost',
+        'USER':'blog_postgre_project_z2sr_user',
+        'PASSWORD':'b1YNIEmdlYcdBFy1Uv1dmShuU0S0nvKk',
+        'HOST':'dpg-cv890hlds78s73dnrllg-a',
         'PORT':'5432'
     }
 }
