@@ -88,7 +88,7 @@ DATABASES = {
         'NAME':'postgres',
         'USER':'aloysious_blog_user',
         'PASSWORD':'lu0POOv4wnEbVwGcFbGh70q9LrHW0IgI',
-        'HOST':'dpg-cv87n5in91rc73atp89g-a',
+        'HOST':'localhost',
         'PORT':'5432'
     }
 }
