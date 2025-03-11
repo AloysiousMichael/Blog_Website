@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static%}
+
+{% block title%}
+
+My Blog
+
+{% endblock%}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static "blog/post.css"%}"/>
+<link rel="stylesheet" href="{% static "blog/index.css"%}"/>
+
+{% endblock%}
+
+{% block content %}
+
+<section id ="welcome">
+<header>
+    <img src="{% static "blog/images/aloshi1.jpeg" %}",alt="Aloshi- THe Author of This Blog"/>
+    <h2>Aloshi's Blog</h2>
+</header>    
+<p>Hi ,I am Aloshi and I am a software developer. I love to write about programming and software development. I am passionate about learning new things and sharing my knowledge with others. I hope you enjoy reading my blog posts!.</p>
+</section>
+
+<section id ="latest-posts">
+    <h2>My Latest Posts</h2>
+
+    <ul>
+        {% for post in posts %}
+            {% include "blog/includes/post.html" %}
+        {% endfor%}
+    </ul>
+    </section>
+
+<section id="about">
+    <h2>What I Do</h2>
+    <p>I love programming and loves to help others with doubts and buggs.</p>
+    <p>My goal is to write more blog and develope my carrier</p>
+</section>
+
+
+
+<h1>My Blog files</h1>
+
+{% endblock%}
